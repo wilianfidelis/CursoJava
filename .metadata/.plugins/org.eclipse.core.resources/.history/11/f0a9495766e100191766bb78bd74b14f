@@ -1,0 +1,42 @@
+package aplication;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entites.Product;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		Product acount; /* ---- Criação da variavel para não ficar no if ---*/
+
+		System.out.print(" Enter acount number: ");
+		int number = sc.nextInt();
+		System.out.print(" Entrar com a conta do titulor: ");
+		String holder = sc.nextLine();
+		sc.nextLine();
+		System.out.print("Ira com um deposito inicial (y/n):");
+		char response = sc.next().charAt(0);
+		if (response == 'y') {
+			System.out.print(" Entre com deposito inicial: ");
+			double initialDeposit = sc.nextDouble();
+			acount = new Product(number, holder, initialDeposit);
+		} 
+		else {
+			acount = new Product(number, holder);
+		}
+		
+		System.out.println();
+		System.out.println("Dados da conta: ");
+		System.out.println(acount);
+		
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

@@ -1,0 +1,31 @@
+package aplication;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+public class Exemplo {
+
+	public static void main(String[] args) {
+		List <String> list = new ArrayList<>();
+		
+		list.add("Wilian");
+		list.add("Ana");
+		list.add("Diego");
+		list.add("Alfredo");
+		list.add(2, "Marcos");
+		list.add("Alfredo");
+		
+		
+		System.out.println(list.size());
+		
+		list.remove();
+		
+		
+		for (String x : list) {
+			System.out.println(x);
+		}
+	}
+
+}

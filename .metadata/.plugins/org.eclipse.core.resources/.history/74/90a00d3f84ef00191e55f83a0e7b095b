@@ -1,0 +1,40 @@
+package entites;
+
+public class Employer {
+
+	private int id;
+	String nome;
+	private double salario;
+	
+	
+	public Employer() {
+	}
+	
+	public Employer(int id, String nome, double salario) {
+		this.id = id;
+		this.nome = nome;
+		this.salario = salario;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public double getSalario() {
+		return salario;
+	}
+
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+	
+	
+	
+	
+	
+	
+}
