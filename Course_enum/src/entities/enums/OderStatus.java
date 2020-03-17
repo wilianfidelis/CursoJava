@@ -1,5 +1,10 @@
 package entities.enums;
 
-public class OderStatus {
-
+public enum OderStatus {
+	
+	PENDING_PAYMENT,
+	PROCESSING,
+	SHIPPED,
+	DELIVERED;
+	
 }

@@ -1,10 +1,19 @@
+//Exemplo de enum
 package application;
+
+import java.util.Date;
+
+import entities.Order;
+import entities.enums.OderStatus;
 
 public class Program {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	   
+		
+		Order order = new Order(1080, new Date(), OderStatus.PENDING_PAYMENT);
+		
+		System.out.println(order);
 	}
 
 }
