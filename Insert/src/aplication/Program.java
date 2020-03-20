@@ -34,11 +34,15 @@ public class Program {
 			
 			System.out.print("Digire seu nome: ");
 			st.setString(1, sc.next());
+			
 			System.out.print("Digire seu e-mail: ");
 			st.setString(2, sc.next());
+			
 			st.setDate(3, new java.sql.Date(sdf.parse("22/04/1985").getTime()));
+			
 			System.out.print("Digite seu salario: ");
 			st.setDouble(4, sc.nextDouble());
+			
 			System.out.print("Digite id do seu departamento: ");
 			st.setInt(5, sc.nextInt());
 
